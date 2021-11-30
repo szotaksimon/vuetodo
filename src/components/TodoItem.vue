@@ -1,11 +1,11 @@
 <template>
   <li>
       <div v-if="!edit">
-        {{text}}
+        {{title}}
         <button @click="Edit">Edit</button>
       </div>
       <div v-if="edit">
-          <input type="text" v-model="text">
+          <input type="text" v-model="title">
           <button @click="Save">Save</button>
       </div>
   </li>
@@ -16,7 +16,7 @@ export default {
     props: ['todo'],
     data() {
         return {
-            text: this.todo.title,
+            title: this.todo.title,
             edit: false,
         }
     },
@@ -29,7 +29,7 @@ export default {
             this.$emit('todo-item-changed', {
                 original: this.todo,
                 new: {
-                    title: this.text
+                    title: this.title
                     },
             })
         }
