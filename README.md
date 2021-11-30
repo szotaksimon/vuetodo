@@ -25,4 +25,18 @@ A főbb pontokon commitolj és pushold fel a változtatásokat. Ezt érdemes min
 Add be a repod linkjét. Figyelj oda, hogy az utolsó commit idejét fogjuk nézni.
 
 # Feladat
-[feladat]
+
+Készíts TODO alkalmazást.
+
+Az alkalmazás jelenítse meg a todo-kat. Egy-egy todo sorában legyenek a kövekezők:
+
+* A feladat leírása
+* Edit gomb
+
+Az Edit gomb megnyomására a feladat leírásából beviteli mező legyen és az Edit gombból pedig egy Save gomb. A Save gomb megnyomására mentődjenek el a változások és legyen látható az új érték, valamint az Edit gomb.
+
+Figylej a következőkre:
+
+* Az App.vue-ban található "todos" változó értékei módosuljanak!
+* Bontsd komponensekre a feladatot!
+* a props értékeket soha ne módosítsd, használj eseményeket!

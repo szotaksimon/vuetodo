@@ -12,6 +12,21 @@ export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  data() {
+    return {
+      todos: [
+        {
+          title: 'Első teendő'
+        },
+        {
+          title: 'Második teendő'
+        },
+        {
+          title: 'Harmadik teendő'
+        },
+        ]
+    }
   }
 }
 </script>
