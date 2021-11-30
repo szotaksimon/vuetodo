@@ -4,7 +4,7 @@
           <TodoItem
           v-for="todo in todos"
           v-bind:key="todo.title"
-          :title="todo.title"
+          :todo="todo"
           @todo-item-changed="Changed"
           />
       </ul>

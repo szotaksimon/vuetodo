@@ -13,10 +13,10 @@
 
 <script>
 export default {
-    props: ['title'],
+    props: ['todo'],
     data() {
         return {
-            text: this.title,
+            text: this.todo.title,
             edit: false,
         }
     },
@@ -27,8 +27,10 @@ export default {
         Save() {
             this.edit = false
             this.$emit('todo-item-changed', {
-                original: this.title,
-                new: this.text,
+                original: this.todo,
+                new: {
+                    title: this.text
+                    },
             })
         }
     }
