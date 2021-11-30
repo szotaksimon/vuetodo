@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Todo :todos="todos"/>
+    <Todo :todos="todos" @todo-item-changed="Changed"/>
   </div>
 </template>
 
@@ -25,6 +25,11 @@ export default {
           title: 'Harmadik teendő'
         },
         ]
+    }
+  },
+  methods: {
+    Changed(e) {
+      console.log(e)
     }
   }
 }
